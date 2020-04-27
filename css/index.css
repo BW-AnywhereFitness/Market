@@ -126,3 +126,74 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cabin', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.4rem;
+  }
+}
