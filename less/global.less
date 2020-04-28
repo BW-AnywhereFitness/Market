@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    color: @white;
 }
 
 html {
@@ -8,14 +9,18 @@ html {
   
   html, body {
     font-family: 'Montserrat', sans-serif;
+    background-color: @black;
   }
   
   h1, h2, h3, h4, h5 {
     font-family: 'Cabin', sans-serif;
+    color: @red;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 3px;
   
     @media @mobile{
       font-size: 3rem;
@@ -65,8 +70,15 @@ html {
   a{
     font-size: 1.6rem;
     text-decoration: none;
+    &:hover{
+        color: @red;
+    }
   
     @media @mobile{
       font-size: 1.4rem;
     }
+  }
+
+  section{
+      padding: 4% 0;
   }
