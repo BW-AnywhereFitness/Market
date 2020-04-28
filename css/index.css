@@ -279,7 +279,7 @@ section .mission {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
 }
 .home .mission .home .content,
 section .mission .home .content {
@@ -332,14 +332,75 @@ section .mission .home .content .home .textContainer {
   max-width: 100%;
   max-height: 500px;
 }
-.about {
-  width: 80%;
+.about,
+section {
+  width: 90%;
 }
-.about .imageContainer {
+.about .contentWrap,
+section .contentWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.about .contentWrap .textContainer,
+section .contentWrap .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0 auto;
   width: 50%;
 }
-.clientsBullets {
-  padding-left: 4%;
+.about .contentWrap .imageContainer,
+section .contentWrap .imageContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.contentTitle h2 {
+  width: 90%;
+  text-align: center;
+}
+ul {
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+ul li {
+  width: 80%;
+  margin-left: 10%;
+  align-self: flex-start;
+  font-size: 2rem;
+}
+.reverse.contentWrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.reverse.contentWrap .textContainer ul {
+  width: 90%;
+  margin-left: 0%;
+  margin-right: 10%;
+}
+.reverse.contentWrap .textContainer ul .clientsBullets {
+  padding-left: 15%;
+}
+.reverse.contentWrap .imageContainer {
+  margin-left: 8%;
+}
+.about .imageContainer {
+  margin-right: 8%;
 }
 @font-face {
   font-family: 'Cabin';
