@@ -1,13 +1,41 @@
-section{
+.home,section{
     width: 80%;
     margin: 0 auto;
     .flexin(column, center, center);
-}
+
+    .mission{
+        background-image: url(../img/crossfit.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 50vh;
+
+        .home.content{
+            .flexin(column, center, center);
+
+            .home.textContainer{
+                .flexin(column, center, center);
+            }
+        }// this closes content
+
+    }// this closes mission
+}// this closes section
+
+.btn{
+    .button(@button-bg, @button-border, @button-color);
+
+    &:hover{
+        background-color: @silver;
+        border: 1px solid @red;
+    }// this closes btn hover
+}// this closes btn
 
 .imageContainer{
     width: 80%;
     img{
-        width: 100%;
-        margin: 0 auto;
+        height: auto; 
+        width: auto; 
+        max-width: 100%; 
+        max-height: 300px;
     }// this closes img
 }// this closes image container
