@@ -274,6 +274,12 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+.about {
+  width: 80%;
+}
+.about .imageContainer {
+  width: 50%;
+}
 .clientsBullets {
   padding-left: 4%;
 }
