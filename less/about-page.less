@@ -17,6 +17,10 @@
             width: 45%;
             .flexin(column, center, flex-start);
             margin: 0 auto;
+
+            img{
+                max-width: 325px;
+            }
         }
 
     }
@@ -24,9 +28,18 @@
     
 }
 
-.contentTitle h2{
-    width: 90%;
-    text-align: center;
+.contentTitle{
+    margin: 0 auto;
+
+    h2{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.title{
+    padding-bottom: 4%;
 }
 
 ul{
@@ -74,7 +87,7 @@ ul{
 }
 
 .contentWrap.team{
-    .flexin(row, center, center);
+    .flexin(row, center, flex-start);
     flex-wrap: wrap;
 
     .individual{

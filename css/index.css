@@ -223,7 +223,8 @@ a:hover {
 }
 section {
   width: 80%;
-  padding: 4% 0;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 li {
   font-size: 1.6rem;
@@ -382,10 +383,13 @@ section .mission .home .content .home .textContainer {
   background-color: #C0C0C0;
   border: 1px solid #DC143C;
 }
+.imageContainer {
+  width: 80%;
+}
 .imageContainer img {
   height: auto;
-  width: 80%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 725px;
   max-height: 500px;
 }
 .about,
@@ -419,9 +423,20 @@ section .contentWrap .imageContainer {
   align-items: flex-start;
   margin: 0 auto;
 }
+.about .contentWrap .imageContainer img,
+section .contentWrap .imageContainer img {
+  max-width: 325px;
+}
+.contentTitle {
+  margin: 0 auto;
+}
 .contentTitle h2 {
   width: 90%;
   text-align: center;
+  margin: 0 auto;
+}
+.title {
+  padding-bottom: 4%;
 }
 ul {
   width: 90%;
@@ -470,7 +485,7 @@ ul li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .contentWrap.team .individual {
