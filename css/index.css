@@ -152,6 +152,11 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 3rem;
@@ -160,6 +165,11 @@ h1 {
 h2 {
   font-size: 5rem;
   padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 500px) {
   h2 {
@@ -234,6 +244,11 @@ header .logo {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  header .logo {
+    padding-left: 5%;
+  }
+}
 header nav {
   width: 50%;
   display: flex;
@@ -300,8 +315,19 @@ section .mission .home .content .home .textContainer {
 .home p {
   font-size: 2rem;
 }
+@media (max-width: 800px) {
+  .home p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
 .home a {
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .home a {
+    font-size: 1.6rem;
+  }
 }
 .mission h2 {
   color: #FFFFFF;
@@ -312,6 +338,12 @@ section .mission .home .content .home .textContainer {
   padding-top: 1%;
   padding-bottom: 4%;
 }
+@media (max-width: 800px) {
+  .mission p {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+}
 .btn {
   width: 15%;
   font-size: 1.6rem;
@@ -321,6 +353,11 @@ section .mission .home .content .home .textContainer {
   border-radius: 10px;
   border: 1px solid #C0C0C0;
   color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .btn {
+    width: 25%;
+  }
 }
 .btn:hover {
   background-color: #C0C0C0;
@@ -341,14 +378,14 @@ section .contentWrap {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
 }
 .about .contentWrap .textContainer,
 section .contentWrap .textContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
   margin: 0 auto;
@@ -372,7 +409,7 @@ ul {
   margin-left: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
 }
@@ -385,13 +422,21 @@ ul li {
 .reverse.contentWrap {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .reverse.contentWrap .textContainer ul {
   width: 90%;
   margin-left: 0%;
   margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.reverse.contentWrap .textContainer ul li {
+  align-content: flex-start;
 }
 .reverse.contentWrap .textContainer ul .clientsBullets {
   padding-left: 15%;

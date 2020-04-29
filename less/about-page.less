@@ -2,12 +2,12 @@
     width: 90%;
 
     .contentWrap{
-        .flexin(row, space-around, center);
+        .flexin(row, space-around, flex-start);
         width: 90%;
         
 
         .textContainer{
-            .flexin(column, center, flex-start);
+            .flexin(column, flex-start, flex-start);
             align-content: flex-start;
             margin: 0 auto;
             width: 50%;
@@ -32,7 +32,7 @@
 ul{
     width: 90%;
     margin-left: 10%;
-    .flexin(column, center, flex-start);
+    .flexin(column, flex-start, flex-start);
     align-content: flex-start;
 
     li{
@@ -44,13 +44,19 @@ ul{
 }
 
 .reverse.contentWrap{
-    .flexin(row-reverse, center, center);
+    .flexin(row-reverse, flex-start, flex-start);
 
     .textContainer{
         ul{
             width: 90%;
             margin-left: 0%;
             margin-right: 10%;
+            .flexin(column, flex-start, flex-start);
+            align-content: flex-start;
+
+            li{
+                align-content: flex-start;
+            }
 
             .clientsBullets{
                 padding-left: 15%;

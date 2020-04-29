@@ -25,10 +25,19 @@
 
 .home p{
     font-size: 2rem;
+    
+    @media @tablet{
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
 
 .home a{
     font-size: 2rem;
+
+    @media @tablet{
+        font-size: 1.6rem;
+    }
 }
 
 .mission h2{
@@ -40,10 +49,19 @@
     font-size: 3rem;
     padding-top: 1%;
     padding-bottom: 4%;
+
+    @media @tablet{
+        text-align: center;
+        font-size: 2.3rem;
+    }
 }
 
 .btn{
     .button(@button-bg, @button-border, @button-color);
+    
+    @media @tablet{
+        width: 25%;
+    }
 
     &:hover{
         background-color: @silver;
