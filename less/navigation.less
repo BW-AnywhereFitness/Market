@@ -6,6 +6,9 @@ header{
     border-bottom: 1px solid @silver;
     margin-bottom: 4%;
 
+    @media @mobile{
+        .flexin(column, center, center);
+    }
 
     .logo{
         width: 20%;
@@ -27,6 +30,11 @@ header{
 
         @media @tablet{
             width: 50%;
+        }
+
+        @media @mobile{
+            width: 100%;
+            padding: 2% 0;
         }
     }// this closes nav
 }// this closes header

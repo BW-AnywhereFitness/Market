@@ -4,6 +4,10 @@
     .contentWrap{
         .flexin(row, space-around, flex-start);
         width: 90%;
+
+        @media @mobile{
+            width: 100%;
+        }
         
 
         .textContainer{
@@ -52,7 +56,8 @@ ul{
         width: 80%;
         margin-left: 10%;
         align-self: flex-start;
-        font-size: 2rem;
+
+
     }
 }
 
@@ -62,13 +67,18 @@ ul{
     .textContainer{
         ul{
             width: 90%;
-            margin-left: 0%;
-            margin-right: 10%;
+            margin: 0 auto;
             .flexin(column, flex-start, flex-start);
             align-content: flex-start;
 
+            
+
             li{
                 align-content: flex-start;
+
+                @media @tablet{
+                    margin-left: 20%;
+                }
             }
 
             .clientsBullets{
@@ -93,6 +103,15 @@ ul{
     .individual{
         width: 30%;
         padding: 2%;
+
+        @media @tablet{
+            width: 45%;
+            padding: 2% 5%;
+        }
+
+        @media @mobile{
+            width: 90%;
+        }
 
         h4{
             color: @white;

@@ -30,6 +30,10 @@
         font-size: 1.6rem;
         text-align: center;
     }
+
+    @media @mobile{
+        font-size: 1.4rem;
+    }
 }
 
 .home a{
@@ -54,14 +58,14 @@
     @media @tablet{
         font-size: 2.3rem;
     }
+
+    @media @mobile{
+        font-size: 1.8rem;
+    }
 }
 
 .btn{
     .button(@button-bg, @button-border, @button-color);
-    
-    @media @tablet{
-        width: 25%;
-    }
 
     &:hover{
         background-color: @silver;
@@ -78,3 +82,7 @@
         max-height: 500px;
     }// this closes img
 }// this closes image container
+
+.title{
+    max-width: 90%;
+}

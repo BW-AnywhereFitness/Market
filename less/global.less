@@ -29,7 +29,7 @@ html {
     }
   
     @media @mobile{
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   
@@ -42,7 +42,7 @@ html {
     }
   
     @media @mobile{
-      font-size: 2.4rem;
+      font-size: 2.8rem;
     }
   }
   
@@ -58,6 +58,10 @@ html {
   h4 {
       font-size: 2.5rem;
       padding-bottom: 10px;
+
+      @media @mobile{
+          font-size: 1.8rem;
+      }
   }
   
   p {
@@ -101,9 +105,16 @@ html {
   }
 
   li{
-      font-size: 1.6rem;
+      font-size: 2rem;
       line-height: 1.5;
       list-style-type: circle;
+
+      @media @tablet{
+        font-size: 1.6rem;
+    }
+    @media @mobile{
+        font-size: 1.4rem;
+    }
   }
 
   img{

@@ -160,7 +160,7 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 h2 {
@@ -174,7 +174,7 @@ h2 {
 }
 @media (max-width: 500px) {
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 h3 {
@@ -189,6 +189,11 @@ h3 {
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 1.8rem;
+  }
 }
 p {
   line-height: 1.5;
@@ -227,9 +232,19 @@ section {
   padding-bottom: 3%;
 }
 li {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.5;
   list-style-type: circle;
+}
+@media (max-width: 800px) {
+  li {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  li {
+    font-size: 1.4rem;
+  }
 }
 img {
   border-radius: 5px;
@@ -245,6 +260,14 @@ header {
   background: #222020;
   border-bottom: 1px solid #C0C0C0;
   margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header .logo {
   width: 20%;
@@ -272,6 +295,12 @@ header nav {
 @media (max-width: 800px) {
   header nav {
     width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    padding: 2% 0;
   }
 }
 footer {
@@ -341,6 +370,11 @@ section .mission .home .content .home .textContainer {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .home p {
+    font-size: 1.4rem;
+  }
+}
 .home a {
   font-size: 2rem;
 }
@@ -364,6 +398,11 @@ section .mission .home .content .home .textContainer {
     font-size: 2.3rem;
   }
 }
+@media (max-width: 500px) {
+  .mission p {
+    font-size: 1.8rem;
+  }
+}
 .btn {
   width: 15%;
   font-size: 1.6rem;
@@ -379,6 +418,11 @@ section .mission .home .content .home .textContainer {
     width: 25%;
   }
 }
+@media (max-width: 500px) {
+  .btn {
+    border-radius: 5px;
+  }
+}
 .btn:hover {
   background-color: #C0C0C0;
   border: 1px solid #DC143C;
@@ -392,6 +436,9 @@ section .mission .home .content .home .textContainer {
   max-width: 725px;
   max-height: 500px;
 }
+.title {
+  max-width: 90%;
+}
 .about,
 section {
   width: 90%;
@@ -403,6 +450,12 @@ section .contentWrap {
   justify-content: space-around;
   align-items: flex-start;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .about .contentWrap,
+  section .contentWrap {
+    width: 100%;
+  }
 }
 .about .contentWrap .textContainer,
 section .contentWrap .textContainer {
@@ -451,7 +504,6 @@ ul li {
   width: 80%;
   margin-left: 10%;
   align-self: flex-start;
-  font-size: 2rem;
 }
 .reverse.contentWrap {
   display: flex;
@@ -461,8 +513,7 @@ ul li {
 }
 .reverse.contentWrap .textContainer ul {
   width: 90%;
-  margin-left: 0%;
-  margin-right: 10%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -471,6 +522,11 @@ ul li {
 }
 .reverse.contentWrap .textContainer ul li {
   align-content: flex-start;
+}
+@media (max-width: 800px) {
+  .reverse.contentWrap .textContainer ul li {
+    margin-left: 20%;
+  }
 }
 .reverse.contentWrap .textContainer ul .clientsBullets {
   padding-left: 15%;
@@ -491,6 +547,17 @@ ul li {
 .contentWrap.team .individual {
   width: 30%;
   padding: 2%;
+}
+@media (max-width: 800px) {
+  .contentWrap.team .individual {
+    width: 45%;
+    padding: 2% 5%;
+  }
+}
+@media (max-width: 500px) {
+  .contentWrap.team .individual {
+    width: 90%;
+  }
 }
 .contentWrap.team .individual h4 {
   color: #FFFFFF;
