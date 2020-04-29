@@ -151,6 +151,7 @@ h1 {
   font-size: 8rem;
   text-align: center;
   letter-spacing: 3px;
+  text-shadow: 1px 1px 0 #FFFFFF;
 }
 @media (max-width: 800px) {
   h1 {
@@ -185,10 +186,14 @@ h3 {
     font-size: 2rem;
   }
 }
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 @media (max-width: 500px) {
   p {
@@ -235,7 +240,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 0;
+  padding: 2% 0;
+  background: #222020;
+  border-bottom: 1px solid #C0C0C0;
+  margin-bottom: 4%;
 }
 header .logo {
   width: 20%;
@@ -244,17 +252,26 @@ header .logo {
   justify-content: space-around;
   align-items: center;
 }
+header .logo p {
+  line-height: 1;
+  padding-bottom: 0;
+}
 @media (max-width: 800px) {
   header .logo {
     padding-left: 5%;
   }
 }
 header nav {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 50%;
+  }
 }
 footer {
   width: 100%;
@@ -264,6 +281,8 @@ footer {
   align-items: center;
   background-color: #DC143C;
   padding: 3%;
+  margin-top: 4%;
+  border-top: 1px solid #C0C0C0;
 }
 footer nav {
   width: 80%;
@@ -337,10 +356,10 @@ section .mission .home .content .home .textContainer {
   font-size: 3rem;
   padding-top: 1%;
   padding-bottom: 4%;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .mission p {
-    text-align: center;
     font-size: 2.3rem;
   }
 }
@@ -446,6 +465,20 @@ ul li {
 }
 .about .imageContainer {
   margin-right: 8%;
+}
+.contentWrap.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contentWrap.team .individual {
+  width: 30%;
+  padding: 2%;
+}
+.contentWrap.team .individual h4 {
+  color: #FFFFFF;
 }
 @font-face {
   font-family: 'Cabin';

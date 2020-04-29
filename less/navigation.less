@@ -1,11 +1,20 @@
 header{
     width: 100%;
     .flexin(row, space-between, center);
-    padding: 1% 0;
+    padding: 2% 0;
+    background: @darkgrey;
+    border-bottom: 1px solid @silver;
+    margin-bottom: 4%;
+
 
     .logo{
         width: 20%;
         .flexin(row, space-around, center);
+
+        p{
+            line-height: 1;
+            padding-bottom: 0;
+        }
 
         @media @tablet{
             padding-left: 5%;
@@ -13,7 +22,11 @@ header{
     }
 
     nav{
-        width: 50%;
+        width: 40%;
         .flexin(row, space-around, center);
+
+        @media @tablet{
+            width: 50%;
+        }
     }// this closes nav
 }// this closes header
