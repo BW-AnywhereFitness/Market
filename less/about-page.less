@@ -133,6 +133,25 @@ ul{
                     text-align: center;
                 }
             }
+
+            img{
+                border-radius: 50%;
+                margin-bottom: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid @white;
+                max-width: 200px;
+                .flexin(row, center, center);
+
+                @media @tablet{
+                    width: 80%;
+
+                }
+                @media @mobile{
+                    width: 35%;
+
+                }
+            }
         }
     }
 }
