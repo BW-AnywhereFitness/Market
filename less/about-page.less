@@ -1,8 +1,12 @@
 .about,section{
     width: 90%;
 
+    @media @tablet{
+        width: 100%;
+    }
+
     .contentWrap{
-        .flexin(row, space-around, flex-start);
+        .flexin(row, center, flex-start);
         width: 90%;
 
         @media @mobile{
@@ -11,15 +15,29 @@
         
 
         .textContainer{
-            .flexin(column, flex-start, flex-start);
-            align-content: flex-start;
             margin: 0 auto;
-            width: 50%;
+            width: 40%;
+            @media @tablet{
+                width: 50%;
+            }
+
+            p{
+                font-size: 2rem;
+
+                @media @tablet{
+                    font-size: 1.6rem;
+                }
+                
+                @media @mobile{
+                    font-size: 1.4rem;
+                  }
+            }
         }// this closes textContainer
 
         .imageContainer{
+            max-width: 325px;
             width: 45%;
-            .flexin(column, center, flex-start);
+            .flexin(column, center, center);
             margin: 0 auto;
 
             img{
@@ -34,6 +52,7 @@
 
 .contentTitle{
     margin: 0 auto;
+    padding-bottom: 2%;
 
     h2{
         width: 90%;
@@ -44,77 +63,108 @@
 
 .title{
     padding-bottom: 4%;
+    margin: 0 auto;
 }
 
 ul{
-    width: 90%;
-    margin-left: 10%;
+    width: 100%;
     .flexin(column, flex-start, flex-start);
     align-content: flex-start;
 
     li{
-        width: 80%;
+        width: 90%;
         margin-left: 10%;
         align-self: flex-start;
+    }
 
-
+    .clientsBullets{
+        margin-left: 15%;
     }
 }
 
 .reverse.contentWrap{
-    .flexin(row-reverse, flex-start, flex-start);
+    .flexin(row-reverse, center, flex-start);
 
-    .textContainer{
-        ul{
-            width: 90%;
-            margin: 0 auto;
-            .flexin(column, flex-start, flex-start);
-            align-content: flex-start;
+    // .textContainer{
+        // ul{
+        //     width: 90%;
+        //     margin: 0 auto;
+        //     .flexin(column, flex-start, flex-start);
+        //     align-content: flex-start;
 
             
 
-            li{
-                align-content: flex-start;
+            // li{
+            //     align-content: flex-start;
+
+            //     @media @tablet{
+            //         margin-left: 20%;
+            //     }
+            // }
+
+            // .clientsBullets{
+            //     padding-left: 15%;
+            // }
+        // }
+    // }
+
+    // .imageContainer{
+    //     margin-left: 8%;
+    // }
+}
+
+// .about .imageContainer{
+//     margin-right: 8%;
+// }
+
+.contentTitle.team{
+    width: 100%;
+    background: @silver;
+    padding-top: 2%;
+
+    h2{
+        color: @white;
+    }
+}
+
+.content.team{
+    width: 100%;
+    background: @silver;
+
+    .contentWrap{
+        .flexin(row, center, flex-start);
+        flex-wrap: wrap;
+    
+        .individual{
+            width: 30%;
+            padding: 2%;
+    
+            @media @tablet{
+                width: 45%;
+                padding: 2% 5%;
+            }
+    
+            @media @mobile{
+                width: 90%;
+            }
+    
+            h3{
+                color: @red;
+            }
+    
+            h4{
+                color: @darkgrey;
+            }
+    
+            p{
+                text-align: justify;
+                color: @darkgrey;
 
                 @media @tablet{
-                    margin-left: 20%;
+                    text-align: center;
                 }
             }
-
-            .clientsBullets{
-                padding-left: 15%;
-            }
-        }
-    }
-
-    .imageContainer{
-        margin-left: 8%;
-    }
-}
-
-.about .imageContainer{
-    margin-right: 8%;
-}
-
-.contentWrap.team{
-    .flexin(row, center, flex-start);
-    flex-wrap: wrap;
-
-    .individual{
-        width: 30%;
-        padding: 2%;
-
-        @media @tablet{
-            width: 45%;
-            padding: 2% 5%;
-        }
-
-        @media @mobile{
-            width: 90%;
-        }
-
-        h4{
-            color: @white;
         }
     }
 }
+

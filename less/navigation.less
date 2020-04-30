@@ -12,12 +12,8 @@ header{
 
     .logo{
         width: 20%;
-        .flexin(row, space-around, center);
-
-        p{
-            line-height: 1;
-            padding-bottom: 0;
-        }
+        .flexin(row, flex-start, center);
+        margin-left: 3%;
 
         @media @tablet{
             padding-left: 5%;
@@ -26,7 +22,15 @@ header{
 
     nav{
         width: 40%;
-        .flexin(row, space-around, center);
+        .flexin(row, flex-end, center);
+        margin-right: 3%;
+
+        .btn{
+            .button(@button-bg, @button-border, @button-color);
+            border-radius: 5px;
+            width: 20%;
+            margin-left: 2.5%;
+        }
 
         @media @tablet{
             width: 50%;

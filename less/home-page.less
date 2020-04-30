@@ -3,12 +3,8 @@
     margin: 0 auto;
     .flexin(column, center, center);
 
-    .mission{
-        background-image: url(../img/crossfit.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 60vh;
+
+        
 
         .home .content{
             .flexin(column, center, center);
@@ -19,8 +15,6 @@
                 width: 80%;
             }// this closes home textContainer
         }// this closes content
-
-    }// this closes mission
 }// this closes section
 
 .home p{
@@ -44,34 +38,43 @@
     }
 }
 
-.mission h2{
-    color: @white;
-    padding: 2% 0;
-}
+.mission.content{
+    background-image: url(../img/crossfit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 4%;
 
-.mission p{
-    font-size: 3rem;
-    padding-top: 1%;
-    padding-bottom: 4%;
-    text-align: center;
-
-    @media @tablet{
-        font-size: 2.3rem;
+    h2{
+        color: @white;
+        padding: 2% 0;
     }
 
-    @media @mobile{
-        font-size: 1.8rem;
+    p{
+        font-size: 3rem;
+        padding-top: 1%;
+        padding-bottom: 4%;
+        text-align: center;
+    
+        @media @tablet{
+            font-size: 2.3rem;
+        }
+    
+        @media @mobile{
+            font-size: 1.8rem;
+        }
     }
+    
+    .btn{
+        .button(@button-bg, @button-border, @button-color);
+    
+        &:hover{
+            background-color: @silver;
+            border: 1px solid @red;
+        }// this closes btn hover
+    }// this closes btn
 }
-
-.btn{
-    .button(@button-bg, @button-border, @button-color);
-
-    &:hover{
-        background-color: @silver;
-        border: 1px solid @red;
-    }// this closes btn hover
-}// this closes btn
 
 .imageContainer{
     width: 80%;

@@ -229,7 +229,7 @@ a:hover {
 section {
   width: 80%;
   padding-top: 1%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
 }
 li {
   font-size: 2rem;
@@ -273,12 +273,9 @@ header .logo {
   width: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-}
-header .logo p {
-  line-height: 1;
-  padding-bottom: 0;
+  margin-left: 3%;
 }
 @media (max-width: 800px) {
   header .logo {
@@ -289,8 +286,35 @@ header nav {
   width: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 3%;
+}
+header nav .btn {
+  width: 15%;
+  font-size: 1.6rem;
+  text-align: center;
+  background: #DC143C;
+  padding: 1.5%;
+  border-radius: 10px;
+  border: 1px solid #C0C0C0;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 20%;
+  margin-left: 2.5%;
+}
+header nav .btn:hover {
+  color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  header nav .btn {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  header nav .btn {
+    border-radius: 5px;
+  }
 }
 @media (max-width: 800px) {
   header nav {
@@ -311,7 +335,6 @@ footer {
   align-items: center;
   background-color: #DC143C;
   padding: 3%;
-  margin-top: 4%;
   border-top: 1px solid #C0C0C0;
 }
 footer nav {
@@ -337,24 +360,16 @@ section {
   justify-content: center;
   align-items: center;
 }
-.home .mission,
-section .mission {
-  background-image: url(../img/crossfit.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 60vh;
-}
-.home .mission .home .content,
-section .mission .home .content {
+.home .home .content,
+section .home .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
 }
-.home .mission .home .content .home .textContainer,
-section .mission .home .content .home .textContainer {
+.home .home .content .home .textContainer,
+section .home .content .home .textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,27 +398,35 @@ section .mission .home .content .home .textContainer {
     font-size: 1.6rem;
   }
 }
-.mission h2 {
+.mission.content {
+  background-image: url(../img/crossfit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 4%;
+}
+.mission.content h2 {
   color: #FFFFFF;
   padding: 2% 0;
 }
-.mission p {
+.mission.content p {
   font-size: 3rem;
   padding-top: 1%;
   padding-bottom: 4%;
   text-align: center;
 }
 @media (max-width: 800px) {
-  .mission p {
+  .mission.content p {
     font-size: 2.3rem;
   }
 }
 @media (max-width: 500px) {
-  .mission p {
+  .mission.content p {
     font-size: 1.8rem;
   }
 }
-.btn {
+.mission.content .btn {
   width: 15%;
   font-size: 1.6rem;
   text-align: center;
@@ -413,17 +436,20 @@ section .mission .home .content .home .textContainer {
   border: 1px solid #C0C0C0;
   color: #FFFFFF;
 }
+.mission.content .btn:hover {
+  color: #FFFFFF;
+}
 @media (max-width: 800px) {
-  .btn {
+  .mission.content .btn {
     width: 25%;
   }
 }
 @media (max-width: 500px) {
-  .btn {
+  .mission.content .btn {
     border-radius: 5px;
   }
 }
-.btn:hover {
+.mission.content .btn:hover {
   background-color: #C0C0C0;
   border: 1px solid #DC143C;
 }
@@ -443,11 +469,17 @@ section .mission .home .content .home .textContainer {
 section {
   width: 90%;
 }
+@media (max-width: 800px) {
+  .about,
+  section {
+    width: 100%;
+  }
+}
 .about .contentWrap,
 section .contentWrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   width: 90%;
 }
@@ -459,21 +491,39 @@ section .contentWrap {
 }
 .about .contentWrap .textContainer,
 section .contentWrap .textContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .about .contentWrap .textContainer,
+  section .contentWrap .textContainer {
+    width: 50%;
+  }
+}
+.about .contentWrap .textContainer p,
+section .contentWrap .textContainer p {
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .about .contentWrap .textContainer p,
+  section .contentWrap .textContainer p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .about .contentWrap .textContainer p,
+  section .contentWrap .textContainer p {
+    font-size: 1.4rem;
+  }
 }
 .about .contentWrap .imageContainer,
 section .contentWrap .imageContainer {
+  max-width: 325px;
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
 }
 .about .contentWrap .imageContainer img,
@@ -482,6 +532,7 @@ section .contentWrap .imageContainer img {
 }
 .contentTitle {
   margin: 0 auto;
+  padding-bottom: 2%;
 }
 .contentTitle h2 {
   width: 90%;
@@ -490,10 +541,10 @@ section .contentWrap .imageContainer img {
 }
 .title {
   padding-bottom: 4%;
+  margin: 0 auto;
 }
 ul {
-  width: 90%;
-  margin-left: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -501,66 +552,67 @@ ul {
   align-content: flex-start;
 }
 ul li {
-  width: 80%;
+  width: 90%;
   margin-left: 10%;
   align-self: flex-start;
+}
+ul .clientsBullets {
+  margin-left: 15%;
 }
 .reverse.contentWrap {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
 }
-.reverse.contentWrap .textContainer ul {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+.contentTitle.team {
+  width: 100%;
+  background: #C0C0C0;
+  padding-top: 2%;
 }
-.reverse.contentWrap .textContainer ul li {
-  align-content: flex-start;
+.contentTitle.team h2 {
+  color: #FFFFFF;
 }
-@media (max-width: 800px) {
-  .reverse.contentWrap .textContainer ul li {
-    margin-left: 20%;
-  }
+.content.team {
+  width: 100%;
+  background: #C0C0C0;
 }
-.reverse.contentWrap .textContainer ul .clientsBullets {
-  padding-left: 15%;
-}
-.reverse.contentWrap .imageContainer {
-  margin-left: 8%;
-}
-.about .imageContainer {
-  margin-right: 8%;
-}
-.contentWrap.team {
+.content.team .contentWrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.contentWrap.team .individual {
+.content.team .contentWrap .individual {
   width: 30%;
   padding: 2%;
 }
 @media (max-width: 800px) {
-  .contentWrap.team .individual {
+  .content.team .contentWrap .individual {
     width: 45%;
     padding: 2% 5%;
   }
 }
 @media (max-width: 500px) {
-  .contentWrap.team .individual {
+  .content.team .contentWrap .individual {
     width: 90%;
   }
 }
-.contentWrap.team .individual h4 {
-  color: #FFFFFF;
+.content.team .contentWrap .individual h3 {
+  color: #DC143C;
+}
+.content.team .contentWrap .individual h4 {
+  color: #222020;
+}
+.content.team .contentWrap .individual p {
+  text-align: justify;
+  color: #222020;
+}
+@media (max-width: 800px) {
+  .content.team .contentWrap .individual p {
+    text-align: center;
+  }
 }
 @font-face {
   font-family: 'Cabin';
