@@ -15,9 +15,19 @@ header{
         .flexin(row, flex-start, center);
         margin-left: 3%;
 
-        @media @tablet{
-            padding-left: 5%;
+        @media @mobile{
+            width: 100%;
+            margin: 0;
+            padding: 2% 0;
+            .flexin(column, center, center);
         }
+
+        a{
+            @media @mobile{
+                font-size: 2rem;
+            }
+        }
+
     }
 
     nav{
@@ -30,6 +40,10 @@ header{
             padding: 3% 1.5%;
             width: 23%;
             margin-left: 2.5%;
+
+            @media @mobile{
+                margin: 1% 0;
+            }
         }
 
         @media @tablet{
@@ -39,6 +53,8 @@ header{
         @media @mobile{
             width: 100%;
             padding: 2% 0;
+            .flexin(column, center, center);
+            margin: 0;
         }
     }// this closes nav
 }// this closes header

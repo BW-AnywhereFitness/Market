@@ -69,6 +69,11 @@
     .btn{
         .button(@button-bg, @button-border, @button-color);
         padding: 1.5%;
+
+        @media @mobile{
+            width: 50%;
+            padding: 2%;
+        }
     }// this closes btn
 }
 
