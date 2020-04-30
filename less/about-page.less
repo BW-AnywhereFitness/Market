@@ -1,0 +1,168 @@
+.about,section{
+    width: 90%;
+
+    @media @tablet{
+        width: 100%;
+    }
+
+    .contentWrap{
+        .flexin(row, center, flex-start);
+        width: 90%;
+
+        @media @mobile{
+            width: 100%;
+            .flexin(column, center, center);
+        }
+        
+
+        .textContainer{
+            margin: 0 auto;
+            width: 40%;
+            @media @tablet{
+                width: 50%;
+                padding: 0 4%;
+            }
+
+            @media @mobile{
+                width: 90%;
+                margin-bottom: 4%;
+            }
+
+            p{
+                font-size: 1.6rem;
+                
+                @media @mobile{
+                    font-size: 1.4rem;
+                  }
+            }
+        }// this closes textContainer
+
+        .imageContainer{
+            max-width: 325px;
+            width: 45%;
+            .flexin(column, center, center);
+            margin: 0 auto;
+
+            img{
+                max-width: 325px;
+            }
+        }
+
+    }
+
+    
+}
+
+.contentTitle{
+    margin: 0 auto;
+    padding-bottom: 2%;
+
+    h2{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.title{
+    padding-bottom: 4%;
+    margin: 0 auto;
+}
+
+ul{
+    width: 100%;
+    .flexin(column, flex-start, flex-start);
+    align-content: flex-start;
+
+    li{
+        width: 90%;
+        margin-left: 10%;
+        align-self: flex-start;
+    }
+
+    .clientsBullets{
+        margin-left: 15%;
+    }
+}
+
+.reverse.contentWrap{
+    .flexin(row-reverse, center, flex-start);
+    margin-bottom: 4%;
+
+    @media @mobile{
+        width: 100%;
+        .flexin(column, center, center);
+    }
+}
+
+.contentTitle.team{
+    width: 100%;
+    background: @silver;
+    padding-top: 6%;
+    border-top: 1px solid @red;
+
+    h2{
+        color: @white;
+    }
+}
+
+.content.team{
+    width: 100%;
+    background: @silver;
+
+    .contentWrap{
+        .flexin(row, space-around, flex-start);
+        flex-wrap: wrap;
+    
+        .individual{
+            width: 30%;
+            padding: 2%;
+    
+            @media @tablet{
+                width: 45%;
+                padding: 2% 5%;
+            }
+    
+            @media @mobile{
+                width: 90%;
+            }
+    
+            h3{
+                color: @red;
+            }
+    
+            h4{
+                color: @darkgrey;
+            }
+    
+            p{
+                text-align: justify;
+                color: @darkgrey;
+
+                @media @tablet{
+                    text-align: center;
+                }
+            }
+
+            img{
+                border-radius: 50%;
+                margin-bottom: 5%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid @white;
+                max-width: 200px;
+                .flexin(row, center, center);
+
+                @media @tablet{
+                    width: 80%;
+
+                }
+                @media @mobile{
+                    width: 35%;
+
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    color: @white;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: @black;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Cabin', sans-serif;
+    color: @palered;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 8rem;
+    text-align: center;
+    -webkit-text-stroke: 2px @white;
+    -webkit-text-fill-color: @red;
+
+
+    @media @tablet{
+        font-size: 6rem;
+    }
+  
+    @media @mobile{
+      font-size: 4rem;
+    }
+  }
+  
+  h2 {
+    font-size: 5rem;
+    padding-bottom: 10px;
+
+    @media @tablet{
+        font-size: 4rem;
+    }
+  
+    @media @mobile{
+      font-size: 2.8rem;
+    }
+  }
+  
+  h3 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  
+    @media @mobile{
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+      font-size: 2.5rem;
+      padding-bottom: 10px;
+
+      @media @mobile{
+          font-size: 1.8rem;
+      }
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 1%;
+  
+    @media @mobile{
+      font-size: 1.4rem;
+    }
+  
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid @white;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    &:hover{
+        color: @red;
+    }
+  
+    @media @mobile{
+      font-size: 1.4rem;
+    }
+  }
+
+  section{
+      width: 80%;
+      padding-top: 1%;
+      padding-bottom: 4%;
+  }
+
+  li{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    list-style-type: circle;
+
+    @media @mobile{
+        font-size: 1.4rem;
+    }
+  }

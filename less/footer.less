@@ -1,0 +1,21 @@
+footer{
+    width: 100%;
+    .flexin(row, center, center);
+    background-color: @red;
+    padding: 3%;
+    border-top: 1px solid @white;
+
+    nav{
+        width: 80%;
+        .flexin(row, space-evenly, center);
+        padding: 1% 0;
+
+        a{
+            font-size: 1.4rem;
+
+            &:hover{
+                color: @black;
+            }// this closes hover
+        }// this closes a
+    }// this closes nav
+}// this closes footer

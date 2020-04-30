@@ -1,0 +1,68 @@
+header{
+    width: 100%;
+    .flexin(row, space-between, center);
+    padding: 2% 0;
+    background: @darkgrey;
+    border-bottom: 1px solid @silver;
+    margin-bottom: 4%;
+
+    @media @mobile{
+        .flexin(column, center, center);
+    }
+
+    .logo{
+        width: 20%;
+        .flexin(row, flex-start, center);
+        margin-left: 3%;
+
+        @media @mobile{
+            width: 100%;
+            margin: 0;
+            padding: 2% 0;
+            .flexin(column, center, center);
+        }
+
+        a{
+            @media @tablet{
+                font-size: 2.3rem;
+            }
+
+            @media @mobile{
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    nav{
+        width: 50%;
+        .flexin(row, flex-end, center);
+        margin-right: 3%;
+
+        .btn{
+            .button(@button-bg, @button-border, @button-color);
+            padding: 3% 1.5%;
+            width: 23%;
+            margin-left: 2.5%;
+
+            @media @tablet{
+                width: 30%;
+            }
+
+            @media @mobile{
+                margin: 1% 0;
+            }
+        }
+
+        @media @tablet{
+            width: 50%;
+        }
+
+        @media @mobile{
+            width: 100%;
+            padding: 2% 0;
+            .flexin(column, center, center);
+            margin: 0;
+        }
+    }// this closes nav
+}// this closes header

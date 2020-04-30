@@ -1,0 +1,30 @@
+.flexin(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@button-bg, @button-border, @button-color){
+    width: 15%;
+    font-size: 1.6rem;
+    text-align: center;
+    background: @button-bg;
+
+    border-radius: 5px;
+    border: 1px solid @button-border;
+    color: @button-color;
+    &:hover{
+        color: @red;
+        background-color: @silver;
+        border: 1px solid @red;
+    }
+
+    @media @tablet{
+        width: 25%;
+    }
+
+    @media @mobile{
+        border-radius: 5px;
+    }
+}

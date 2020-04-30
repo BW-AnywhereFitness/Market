@@ -1,0 +1,95 @@
+.home,section{
+    width: 90%;
+    margin: 0 auto;
+    .flexin(column, center, center);
+
+    .content{
+        .flexin(column, center, center);
+        width: 80%;
+
+        .textContainer{
+            .flexin(column, center, center);
+            width: 80%;
+        }// this closes home textContainer
+    }// this closes content
+}// this closes section
+
+.home p{
+    font-size: 2rem;
+    text-align: center;
+    
+    @media @tablet{
+        font-size: 1.6rem;
+    }
+
+    @media @mobile{
+        font-size: 1.4rem;
+    }
+}
+
+.home a{
+    font-size: 2rem;
+
+    @media @tablet{
+        font-size: 1.6rem;
+    }
+    
+    @media @mobile{
+        font-size: 1.4rem;
+        text-decoration: underline;
+      }
+}
+
+.mission.content{
+    background-image: url(../img/crossfit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 4%;
+
+
+    h2{
+        color: @white;
+        padding: 2% 0;
+    }
+
+    p{
+        font-size: 3rem;
+        padding-top: 1%;
+        padding-bottom: 4%;
+        text-align: center;
+    
+        @media @tablet{
+            font-size: 2.3rem;
+        }
+    
+        @media @mobile{
+            font-size: 1.8rem;
+        }
+    }
+    
+    .btn{
+        .button(@button-bg, @button-border, @button-color);
+        padding: 1.5%;
+
+        @media @mobile{
+            width: 50%;
+            padding: 2%;
+        }// this closes mobile
+    }// this closes btn
+}// this closes mission content
+
+.imageContainer{
+    width: 80%;
+    img{
+        height: auto; 
+        width: 100%; 
+        max-width: 725px; 
+        max-height: 500px;
+    }// this closes img
+}// this closes image container
+
+.title{
+    max-width: 90%;
+}
