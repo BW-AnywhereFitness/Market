@@ -21,8 +21,9 @@ html {
   h1 {
     font-size: 8rem;
     text-align: center;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 0 @white;
+    -webkit-text-stroke: 2px @white;
+    -webkit-text-fill-color: @red;
+
 
     @media @tablet{
         font-size: 6rem;
@@ -78,6 +79,8 @@ html {
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    border: 1px solid @white;
   }
   
   .container {
@@ -95,7 +98,6 @@ html {
   
     @media @mobile{
       font-size: 1.4rem;
-      text-decoration: underline;
     }
   }
 
@@ -106,19 +108,11 @@ html {
   }
 
   li{
-      font-size: 2rem;
-      line-height: 1.5;
-      list-style-type: circle;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    list-style-type: circle;
 
-      @media @tablet{
-        font-size: 1.6rem;
-    }
     @media @mobile{
         font-size: 1.4rem;
     }
-  }
-
-  img{
-      border-radius: 5px;
-      border: 1px solid @silver;
   }

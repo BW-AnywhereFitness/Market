@@ -3,26 +3,23 @@
     margin: 0 auto;
     .flexin(column, center, center);
 
+    .content{
+        .flexin(column, center, center);
+        width: 80%;
 
-        
-
-        .home .content{
+        .textContainer{
             .flexin(column, center, center);
             width: 80%;
-
-            .home .textContainer{
-                .flexin(column, center, center);
-                width: 80%;
-            }// this closes home textContainer
-        }// this closes content
+        }// this closes home textContainer
+    }// this closes content
 }// this closes section
 
 .home p{
     font-size: 2rem;
+    text-align: center;
     
     @media @tablet{
         font-size: 1.6rem;
-        text-align: center;
     }
 
     @media @mobile{
@@ -36,6 +33,11 @@
     @media @tablet{
         font-size: 1.6rem;
     }
+    
+    @media @mobile{
+        font-size: 1.4rem;
+        text-decoration: underline;
+      }
 }
 
 .mission.content{
@@ -45,6 +47,7 @@
     width: 100%;
     height: 60vh;
     margin-bottom: 4%;
+
 
     h2{
         color: @white;
@@ -73,9 +76,9 @@
         @media @mobile{
             width: 50%;
             padding: 2%;
-        }
+        }// this closes mobile
     }// this closes btn
-}
+}// this closes mission content
 
 .imageContainer{
     width: 80%;
