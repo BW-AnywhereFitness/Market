@@ -249,9 +249,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 0;
-  background: #222020;
-  border-bottom: 1px solid #C0C0C0;
+  padding: 1% 0;
+  background: #C0C0C0;
+  border-bottom: 1px solid #FFFFFF;
   margin-bottom: 4%;
 }
 @media (max-width: 500px) {
@@ -269,6 +269,9 @@ header .logo {
   justify-content: flex-start;
   align-items: center;
   margin-left: 3%;
+}
+header .logo a {
+  color: #222020;
 }
 @media (max-width: 500px) {
   header .logo {
@@ -307,8 +310,8 @@ header nav .btn {
   border-radius: 5px;
   border: 1px solid #C0C0C0;
   color: #FFFFFF;
-  padding: 3% 1.5%;
-  width: 23%;
+  padding: 2% 1%;
+  width: 20%;
   margin-left: 2.5%;
 }
 header nav .btn:hover {
