@@ -308,7 +308,7 @@ header nav .btn {
   text-align: center;
   background: #DC143C;
   border-radius: 5px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid none;
   color: #FFFFFF;
   padding: 2% 1%;
   width: 20%;
@@ -466,7 +466,7 @@ section .content .textContainer {
   text-align: center;
   background: #DC143C;
   border-radius: 5px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid none;
   color: #FFFFFF;
   padding: 1.5%;
 }
